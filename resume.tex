@@ -1,0 +1,257 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingg}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjSubheadingg}[2]{
+  \vspace{-2pt}
+  
+    % \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{itemize}
+       \item {#1}   \hspace*{\fill}{\textbf{\small #2}} 
+    \end{itemize}
+    \vspace{-12pt}
+    
+    % \end{tabular*}
+    
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Harsh Gupta} \\ \vspace{8pt}
+    
+    \small 
+    \href{mailto:hg242322@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{hg242322@gmail.com}} ~ 
+    \href{tel://+917001876232}{\raisebox{-0.2\height}\faPhone\   \underline{+91 7001876232}} ~
+    \href{https://www.linkedin.com/in/harsh-gupta-707a331b4/}{\raisebox{-0.2\height}\faLinkedin\ \underline{harsh-gupta-707a331b4}}  ~
+    \href{https://github.com/guptaharsh13}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/guptaharsh13}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology, Vellore}{Jul 2020 -- May 2024 (Expected)}
+      {B.Tech in Computer Science and Engineering}{9.10, CGPA}
+
+      % \resumeSubheading
+      % {St. Patrick's Higher Secondary School, Asansol}{Apr 2018 -- Apr 2020}
+      % {Indian School Certificate (ISC)}{95\%}
+
+      % \resumeSubheading
+      % {St. Patrick's Higher Secondary School, Asansol}{Apr 2012 -- Apr 2018}
+      % {Indian Certificate of Secondary Education (ICSE)}{96.4\%}
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheadingg
+      {\href{https://www.luganodes.com/}{Luganodes} (Software Development Engineer)}{Sep 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developed robust indexers for Ethereum, \href{https://github.com/Luganodes/Solana-Indexer}{Solana (open-sourced)}, Polkadot, Polygon, MultiversX, and Kava, ensuring efficient and accurate data indexing.}
+        \resumeItem{Developed a custom deposit tracker for our Ethereum staking API, with over \$1 billion in client stakes, eliminating reliance on Beaconcha.}
+        \resumeItem{Engineered a sophisticated reporting dashboard, with end-to-end deployment (inc. CI/CD integration), providing accurate financial reports for clients with over \$2.5 billion in stakes.}
+        \resumeItem{Automated monthly asset reports across 20 blockchains, improving efficiency and report reliability.}
+    \resumeItemListEnd
+    % \vspace{-6pt}
+
+\resumeSubheadingg
+      {\href{https://dyte.io/}{Dyte} (Software Engineering Intern)}{May 2023 -- Aug 2023}
+      \resumeItemListStart
+        \resumeItem{Conducted load testing on socket services, achieving 100K simultaneous socket connections to verify its reliability and robustness.}
+        \resumeItem{Developed unit tests for 2 major socket services in Go, with a 90\% test coverage, automating the report generation using a CI/CD pipeline.}
+        \resumeItem{Developed a health probe to monitor the status of socket services and generate automated reports sent to Slack.}
+    \resumeItemListEnd
+    % \vspace{-6pt}
+    
+  \resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+  \resumeSubheadingg
+      {\href{https://github.com/guptaharsh13/rbac-auth-service/}{RBAC Authentication Service}}{}
+      \resumeItemListStart
+        \resumeItem{Developed an extensive, containerized task management system featuring customizable, dynamic role-based access control (RBAC).}
+        \resumeItem{Ensured robust security with advanced user authentication, data integrity, and privacy measures.}
+    \resumeItemListEnd
+    % \vspace{-6pt}
+
+ \resumeSubheadingg
+      {{Email Extractor}}{}
+      \resumeItemListStart
+        \resumeItem{Automated IEEE VIT's sponsorship workflow using Selenium WebDriver and Python3, achieving a 300\% increase in sponsorship revenue compared to the previous year}
+        \resumeItem{Managed a high-volume email system, integrating AWS SES, SendGrid, and Mailgun to efficiently send over 10,000 emails per event for organization events.}
+    \resumeItemListEnd
+    \vspace{-6pt}
+
+    
+    \resumeSubheadingg
+      {\href{https://github.com/guptaharsh13/circulo}{Círculo}}{}
+      \resumeItemListStart
+        \resumeItem{Built an API for retrieving recent YouTube videos by tag/search query, in a paginated response}
+        \resumeItem{Innovated an optimized algorithm based on exponential backoff, dynamically adjusting request intervals using Celery and Celery Beat.}
+        \resumeItem{Enhanced database performance with BRIN indexing, and partially implemented Elasticsearch for advanced search.}
+        
+    \resumeItemListEnd
+    \vspace{-6pt}
+
+    \resumeSubheadingg
+      {\href{https://github.com/guptaharsh13/FFCS}{FFCS}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a TypeScript backend for a University Credit and Timetable Management System, enhancing efficiency and preventing scheduling conflicts.}
+        \resumeItem{Utilized PostgreSQL for reliable data management, adhering to OpenAPI standards for API integration.}
+
+    \resumeItemListEnd
+    % \vspace{-6pt}
+    
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------LEADERSHIP---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheadingg{{Technical Lead, \href{https://ieeevit.org}{IEEE-VIT}}}{Dec 2020 -- Dec 2023}
+            \resumeItemListStart
+                \resumeItem{Responsible for Technical growth of 75+ members in the organization inculcating and promoting the Open Source Software culture and good development practices.}
+                \resumeItem{Developed software for events and projects used by 1500+ participants in 100+ countries.}
+                \resumeItem{Speaker at “\href{https://youtu.be/qxFbK-CRbO8}{Techloop -- Introduction to MERN}”, guiding 400+ students in Web Development.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+
+\vspace{-12pt}
+
+% -----------Achievements-----------
+\section{Achievements}
+    \resumeItemListStart
+       \resumeItem{Awarded the Merit Scholarship for Outstanding Performance in academics by VIT Vellore, twice.}
+       \vspace{-6pt}
+   \resumeItemListEnd
+   
+% -----------SKILLS AND INTERESTS--------
+\section{Skills and Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Programming Languages}{: Go, JavaScript, TypeScript, NodeJS, Python3, Java, C, C++}
+        \textbf{Relevant Coursework}{:  Data Structures and Algorithms, Database Management Systems, Objected Oriented Programming, Operating Systems, Computer Networks, Computer Architecture and Organization, Theory of Computation, Cryptography Fundamentals, Cyber Security, Network Security, Web Security}
+        \textbf{Miscellaneous}{:  Linux, Git, GitHub, Jira, Postman, PostgreSQL, MongoDB, MySQL, Azure, AWS, GCP}
+        \textbf{Qualities}{: Confident, Multitasker, Quick-learner, Adaptive, Team player, Problem Solving}
+    }}
+ \end{itemize}
+ 
+\vspace{-12pt}
+
+\end{document}
