@@ -17,7 +17,6 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -136,8 +135,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Vellore Institute of Technology, Vellore}{Jul 2020 -- May 2024 (Expected)}
-      {B.Tech in Computer Science and Engineering}{9.10, CGPA}
+      {Vellore Institute of Technology, Vellore}{Jul 2020 -- May 2024}
+      {B.Tech in Computer Science and Engineering}{9.09, CGPA}
 
       % \resumeSubheading
       % {St. Patrick's Higher Secondary School, Asansol}{Apr 2018 -- Apr 2020}
@@ -155,7 +154,7 @@
   \resumeSubHeadingListStart
 
   \resumeSubheadingg
-      {\href{https://www.luganodes.com/}{Luganodes} (Software Development Engineer)}{Sep 2023 -- Present}
+      {\href{https://www.luganodes.com/}{Luganodes \scriptsize\faExternalLink*} \hspace{0.5mm} [Software Development Engineer]}{Sep 2023 -- Present}
       \resumeItemListStart
         \resumeItem{Led the development of first-ever batch transaction flow for validator operations like consolidation, partial exit, etc. using EIP-7702, even before Pectra upgrade on Ethereum mainnet.}
         \resumeItem{Actively contributed to the Ethereum Staking API, which secured \$1.3B+ in institutional client stake.}
@@ -167,10 +166,10 @@
         \resumeItem{Built a tool to automatically boost Berachain validators based on predefined thresholds, optimizing performance.}
         \resumeItem{Developed Staking APIs for Solana and Polygon}
     \resumeItemListEnd
-    % \vspace{-6pt}
+    \vspace{6pt}
 
 \resumeSubheadingg
-      {\href{https://dyte.io/}{Dyte - YC W21} (Software Engineering Intern)}{May 2023 -- Aug 2023}
+      {\href{https://dyte.io/}{Dyte \textnormal{(YC W21)} \scriptsize\faExternalLink*} \hspace{0.5mm} [Software Engineering Intern]}{May 2023 -- Aug 2023}
       \resumeItemListStart
         \resumeItem{Conducted load testing on socket services, achieving 100K simultaneous socket connections to analyze its reliability and performance.}
         \resumeItem{Wrote unit tests for the sockets layer in Go, achieving 90\% test coverage, and automated coverage report generation via a CI/CD pipeline.}
@@ -186,35 +185,25 @@
 \section{Projects}
   \resumeSubHeadingListStart
 
-  \resumeSubheadingg
-      {\href{https://github.com/guptaharsh13/rbac-auth-service/}{RBAC Authentication Service}}{}
-      \resumeItemListStart
-        \resumeItem{Developed an extensive, containerized task management system featuring customizable, dynamic role-based access control (RBAC).}
-        \resumeItem{Ensured robust security with advanced user authentication, data integrity, and privacy measures.}
-    \resumeItemListEnd
-    % \vspace{-6pt}
-
  \resumeSubheadingg
       {{Email Extractor}}{}
       \resumeItemListStart
         \resumeItem{Automated IEEE VIT's sponsorship workflow using Selenium WebDriver and Python3, achieving a 300\% increase in sponsorship revenue compared to the previous year}
         \resumeItem{Managed a high-volume email system, integrating AWS SES, SendGrid, and Mailgun to efficiently send over 10,000 emails per event for organization events.}
     \resumeItemListEnd
-    \vspace{-6pt}
+    % \vspace{-6pt}
 
     
-    % \resumeSubheadingg
-    %   {\href{https://github.com/guptaharsh13/circulo}{Círculo}}{}
-    %   \resumeItemListStart
-    %     \resumeItem{Built an API for retrieving recent YouTube videos by tag/search query, in a paginated response}
-    %     \resumeItem{Innovated an optimized algorithm based on exponential backoff, dynamically adjusting request intervals using Celery and Celery Beat.}
-    %     \resumeItem{Enhanced database performance with BRIN indexing, and partially implemented Elasticsearch for advanced search.}
-        
-    % \resumeItemListEnd
+    \resumeSubheadingg
+      {\href{https://github.com/guptaharsh13/rbac-auth-service/}{RBAC Authentication Service \scriptsize\faExternalLink*}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a containerized task management system with dynamic role-based and group-based access control.}
+        \resumeItem{Enabled seamless bulk CSV uploads, preserving user-task relationships and enhancing data management efficiency.}
+    \resumeItemListEnd
     % \vspace{-6pt}
 
     \resumeSubheadingg
-      {\href{https://github.com/guptaharsh13/FFCS}{FFCS}}{}
+      {\href{https://github.com/guptaharsh13/FFCS}{FFCS \scriptsize\faExternalLink*}}{}
       \resumeItemListStart
         \resumeItem{Developed a TypeScript backend for a University Credit and Timetable Management System, enhancing efficiency and preventing scheduling conflicts.}
         \resumeItem{Utilized PostgreSQL for reliable data management, adhering to OpenAPI standards for API integration.}
@@ -228,11 +217,11 @@
 %-----------LEADERSHIP---------------
 \section{Leadership / Extracurricular}
     \resumeSubHeadingListStart
-        \resumeSubheadingg{{Technical Lead, \href{https://ieeevit.org}{IEEE-VIT}}}{Dec 2020 -- Dec 2023}
+        \resumeSubheadingg{{Technical Head, \href{https://ieeevit.org}{IEEE-VIT}}}{Dec 2020 -- Dec 2023}
             \resumeItemListStart
                 \resumeItem{Responsible for Technical growth of 75+ members in the organization inculcating and promoting the Open Source Software culture and good development practices.}
-                \resumeItem{Developed software for events and projects used by 1500+ participants in 100+ countries.}
-                \resumeItem{Speaker at "\href{https://youtu.be/qxFbK-CRbO8}{Techloop -- Introduction to MERN}", guiding 400+ students in Web Development.}
+                \resumeItem{Developed projects and software for events used by 1500+ participants in 100+ countries.}
+                \resumeItem{Speaker at \underline{\href{https://youtu.be/qxFbK-CRbO8}{Techloop -- Introduction to MERN \scriptsize\faExternalLink*}}, guiding 400+ students in Web Development.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
     
@@ -250,10 +239,8 @@
 \section{Skills and Interests}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Programming Languages}{: Go, JavaScript, TypeScript, NodeJS, Python3, Java, C, C++}
-        % \textbf{Relevant Coursework}{:  Data Structures and Algorithms, Database Management Systems, Objected Oriented Programming, Operating Systems, Computer Networks, Computer Architecture and Organization, Theory of Computation, Cryptography Fundamentals, Cyber Security, Network Security, Web Security}
-        \textbf{Miscellaneous}{:  Linux, Git, GitHub, Jira, Postman, PostgreSQL, MongoDB, MySQL, Azure, AWS, GCP}
-        \textbf{Qualities}{: Confident, Multitasker, Quick-learner, Adaptive, Team player, Problem Solving}
+        \textbf{Programming Languages}{: Golang, JavaScript, TypeScript, Python3, Java, C, C++} \\
+        \textbf{Miscellaneous}{:  Linux, Git, PostgreSQL, MongoDB, MySQL, AWS, Azure, GCP, Docker, Kubernetes}
     }}
  \end{itemize}
  
