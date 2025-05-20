@@ -31,7 +31,7 @@ jobs:
 
       - name: Copy and push PDF
         run: |
-          cp ../resume.pdf target_repo/
+          cp resume.pdf target_repo/
           cd target_repo
           git add resume.pdf
           git commit -m "Update resume PDF" || exit 0
