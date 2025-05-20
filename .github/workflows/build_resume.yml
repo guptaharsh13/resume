@@ -22,12 +22,19 @@ jobs:
         with:
           root_file: resume.tex
 
-      - name: Commit and push if changed
+      - name: Clone target repository
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git clone https://${{ secrets.PAT }}@github.com/guptaharsh13/files.git target_repo
+          cd target_repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Copy and push PDF
+        run: |
+          cp ../resume.pdf target_repo/
+          cd target_repo
           git add resume.pdf
           git commit -m "Update resume PDF" || exit 0
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
