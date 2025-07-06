@@ -157,25 +157,24 @@
   \resumeSubheadingg
       {\href{https://www.luganodes.com/}{Luganodes \scriptsize\faExternalLink*} \hspace{0.5mm} [Software Development Engineer]}{Sep 2023 -- Present}
       \resumeItemListStart
-        \resumeItem{Led the development of a {\href{https://github.com/luganodes/Pectra-Batch-Contract}{\underline{batch contract} \scriptsize\faExternalLink*}} which implements a unique transaction flow for validator operations like consolidation, partial exit, etc. using EIP-7702, for the Pectra upgrade on Ethereum.}
-        \resumeItem{Built an automated boost optimization tool for Berachain validators, propelling Luganodes into the top 10 leaderboard despite 95\% less stake than top validators.}
-        \resumeItem{Led migration from Docker on individual VMs to Kubernetes, setting up the cluster with ArgoCD, Infisical, monitoring stack, and MongoDB replica sets.}
-        \resumeItem{Actively contributed to the Ethereum Staking API, which secured \textbf{\$1.3B+} in institutional client stake.}
-        \resumeItem{Built a custom Ethereum deposit tracker with 0\% external dependency, eliminating \textbf{\$399/month} in costs.}
-        \resumeItem{Automated validator onboarding to Web3Signer and Lighthouse, enabling instant post-deposit onboarding with zero manual intervention.}
-        \resumeItem{Developed high-performance indexers for Ethereum, Polygon, Solana, Polkadot, Avail, \href{https://github.com/luganodes/berachain-indexer}{\underline{Berachain} \scriptsize\faExternalLink*}, MultiversX, and Kava, ensuring data accuracy and reliability.}
-        \resumeItem{Engineered a sophisticated reporting dashboard, integrating 20+ blockchains, providing accurate financial reports for clients with over \textbf{\$3B+} staked with us.}
-        \resumeItem{Set up monitoring dashboards and analytics using Grafana, Mimir, Alloy, and Loki, with real-time logging and alerts for multiple blockchains.}
-        \resumeItem{Developed Staking APIs for Solana and Polygon}
+        \resumeItem{Built automated experimentation and optimization tools for Berachain validators, \textbf{achieving top 10 leaderboard} position with \textbf{95\% less stake than competitors} through data-driven optimization strategies.}
+        \resumeItem{Architected high-performance \textbf{data ingestion pipelines} and \textbf{indexers} for 8+ blockchains (Ethereum, Polygon, Solana, Polkadot, Avail, \href{https://github.com/luganodes/berachain-indexer}{\underline{Berachain} \scriptsize\faExternalLink*}, MultiversX, Kava), processing \textbf{billions of events} in real-time.}
+        \resumeItem{Built an \textbf{event-driven data capture system} to track validator deposits, eliminating third-party dependencies, and \textbf{saving \$399/month} in operational costs.}
+        \resumeItem{Engineered a sophisticated reporting dashboard, integrating \textbf{20+ blockchains}, delivering accurate financial reports for clients with over \textbf{\$3B+} staked with us.}
+        \resumeItem{\textbf{Spearheaded} the migration of services from Docker on individual VMs \textbf{to Kubernetes}, implementing a \textbf{GitOps workflow} with ArgoCD, secrets management with Infisical, a monitoring stack, and MongoDB replica sets.}
+        \resumeItem{Led the development of a {\href{https://github.com/luganodes/Pectra-Batch-Contract}{\underline{batch contract} \scriptsize\faExternalLink*}} which enables \textbf{high-throughput transaction batching} to optimize operational efficiency for large-scale validator operations.}
+        \resumeItem{Automated a zero-touch validator onboarding pipeline, \textbf{eliminating 100\% manual errors}.}
+        \resumeItem{Implemented \textbf{end-to-end monitoring and analytics} dashboards using Grafana, Mimir, Alloy, and Loki, with \textbf{real-time logging and alerting} for critical services.}
+        \resumeItem{Developed and contributed to high-volume staking APIs (Ethereum, Solana, Polygon) that secured over \textbf{\$1.3B+} in institutional client stake.}
     \resumeItemListEnd
     \vspace{6pt}
 
 \resumeSubheadingg
       {\href{https://dyte.io/}{Dyte \textnormal{(YC W21)} \scriptsize\faExternalLink*} \hspace{0.5mm} [Software Engineering Intern]}{May 2023 -- Aug 2023}
       \resumeItemListStart
-        \resumeItem{Conducted load testing on socket services, achieving 100K simultaneous socket connections to analyze its reliability and performance.}
-        \resumeItem{Wrote unit tests for the sockets layer in Go, achieving 90\% test coverage, and automated coverage report generation via a CI/CD pipeline.}
-        \resumeItem{Developed a health probe to monitor socket service status, with real-time status reports sent directly to Slack.}
+        \resumeItem{Conducted large-scale load testing on real-time socket services, validating system reliability and performance under \textbf{100,000 concurrent connections}.}
+        \resumeItem{Authored comprehensive unit tests in Go for the core sockets layer, achieving \textbf{90\% test coverage} and automating coverage reporting within the CI/CD pipeline.}
+        \resumeItem{Implemented a health probe to monitor socket service uptime, delivering \textbf{real-time status alerts} to Slack and improving incident response time.}
     \resumeItemListEnd
     % \vspace{-6pt}
     
@@ -187,30 +186,35 @@
 \section{Projects}
   \resumeSubHeadingListStart
 
- \resumeSubheadingg
+    \resumeSubheadingg
+      {\href{http://portal.surgeped.com/}{Freelance Marketplace (Surgeped) \scriptsize\faExternalLink*}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered a \textbf{full-stack, multi-tenant SaaS platform} used by \textbf{100+ users}, which centralized freelance management and reduced manual coordination efforts by an estimated \textbf{40-50\%}.}
+        \resumeItem{Built the backend API with Express, PostgreSQL, and Prisma, featuring a sophisticated \textbf{RBAC}, a \textbf{public bidding feature}, and an \textbf{integrated wallet} to securely manage on-platform transactions and payouts.}
+        \resumeItem{Developed a responsive, component-based frontend with \textbf{Next.js, React Query, and Zustand} to manage complex application state, ensuring a seamless and intuitive user experience across the platform.}
+    \resumeItemListEnd
+
+    \resumeSubheadingg
       {{Email Extractor}}{}
       \resumeItemListStart
-        \resumeItem{Automated IEEE VIT's sponsorship workflow using Selenium WebDriver and Python3, achieving a 300\% increase in sponsorship revenue compared to the previous year}
-        \resumeItem{Managed a high-volume email system, integrating AWS SES, SendGrid, and Mailgun to efficiently send over 10,000 emails per event for organization events.}
+        \resumeItem{Automated IEEE-VIT's sponsorship workflow using Selenium WebDriver and Python3, achieving a \textbf{300\% increase in sponsorship revenue} from the previous year}
+        \resumeItem{Designed a high-volume email delivery system using AWS SES, SendGrid, and Mailgun, capable of dispatching over \textbf{10,000 emails per event}.}
     \resumeItemListEnd
+
+    % \resumeSubheadingg
+    %   {\href{https://github.com/guptaharsh13/rbac-auth-service/}{RBAC Authentication Service \scriptsize\faExternalLink*}}{}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed a containerized task management system featuring dynamic role-based and group-based access control.}
+    %     \resumeItem{Implemented a CSV data ingestion feature to handle bulk user and task uploads, preserving complex user-task relationships.}
+    % \resumeItemListEnd
     % \vspace{-6pt}
 
-    
-    \resumeSubheadingg
-      {\href{https://github.com/guptaharsh13/rbac-auth-service/}{RBAC Authentication Service \scriptsize\faExternalLink*}}{}
-      \resumeItemListStart
-        \resumeItem{Developed a containerized task management system with dynamic role-based and group-based access control.}
-        \resumeItem{Enabled seamless bulk CSV uploads, preserving user-task relationships and enhancing data management efficiency.}
-    \resumeItemListEnd
-    % \vspace{-6pt}
-
-    \resumeSubheadingg
-      {\href{https://github.com/guptaharsh13/FFCS}{FFCS \scriptsize\faExternalLink*}}{}
-      \resumeItemListStart
-        \resumeItem{Developed a TypeScript backend for a University Credit and Timetable Management System, enhancing efficiency and preventing scheduling conflicts.}
-        \resumeItem{Utilized PostgreSQL for reliable data management, adhering to OpenAPI standards for API integration.}
-
-    \resumeItemListEnd
+    % \resumeSubheadingg
+    %   {\href{https://github.com/guptaharsh13/FFCS}{FFCS \scriptsize\faExternalLink*}}{}
+    %   \resumeItemListStart
+    %     \resumeItem{Built TypeScript backend for University Credit and Timetable Management System, preventing scheduling conflicts and optimizing resource allocation.}
+    %     \resumeItem{Utilized PostgreSQL for reliable data management, adhering to OpenAPI standards for seamless API integration.}
+    % \resumeItemListEnd
     % \vspace{-6pt}
     
   \resumeSubHeadingListEnd
@@ -221,9 +225,9 @@
     \resumeSubHeadingListStart
         \resumeSubheadingg{{Technical Head, \href{https://ieeevit.org}{IEEE-VIT}}}{Dec 2020 -- Dec 2023}
             \resumeItemListStart
-                \resumeItem{Responsible for Technical growth of 75+ members in the organization inculcating and promoting the Open Source Software culture and good development practices.}
-                \resumeItem{Developed projects and software for events used by 1500+ participants in 100+ countries.}
-                \resumeItem{Speaker at \underline{\href{https://youtu.be/qxFbK-CRbO8}{Techloop -- Introduction to MERN \scriptsize\faExternalLink*}}, guiding 400+ students in Web Development.}
+                \resumeItem{Oversaw technical growth of \textbf{75+ members}, promoting open-source culture and engineering best practices.}
+                \resumeItem{Launched projects and software for events used by \textbf{1500+ participants} in \textbf{100+ countries}.}
+                \resumeItem{Speaker at \underline{\href{https://youtu.be/qxFbK-CRbO8}{Techloop -- Introduction to MERN \scriptsize\faExternalLink*}}, guiding \textbf{400+ students} in Web Development.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
     
@@ -238,11 +242,13 @@
    \resumeItemListEnd
    
 % -----------SKILLS AND INTERESTS--------
-\section{Skills and Interests}
+\section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Programming Languages}{: Golang, JavaScript, TypeScript, Python3, Java, C, C++} \\
-        \textbf{Miscellaneous}{:  Linux, Git, PostgreSQL, MongoDB, MySQL, AWS, Azure, GCP, Docker, Kubernetes}
+        \textbf{Programming Languages}{: Go, JavaScript, TypeScript, Python, Rust, Java, C, C++} \\
+        \textbf{Cloud \& Infrastructure}{: AWS, Azure, GCP, Cloudflare Workers, Docker, Kubernetes, ArgoCD} \\
+        \textbf{Databases}{: PostgreSQL, Google BigQuery, MongoDB, Redis, MySQL} \\
+        \textbf{Developer Tools \& Concepts}{: Git, Grafana, Prometheus, Loki, Mimir, A/B Testing, Data-Driven Optimization}
     }}
  \end{itemize}
  

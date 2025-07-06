@@ -3,7 +3,7 @@ name: Build LaTeX Resume
 on:
   push:
     branches:
-      - main
+      - "*" # Run on all branches
     # paths:
     #   - "resume.tex"
 
@@ -31,10 +31,13 @@ jobs:
 
       - name: Copy and push PDF
         run: |
-          cp resume.pdf target_repo/
+          # Extract branch name and create resume folder if it doesn't exist
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          mkdir -p target_repo/resume
+          cp resume.pdf target_repo/resume/resume_${BRANCH_NAME}.pdf
           cd target_repo
-          git add resume.pdf
-          git commit -m "Update resume PDF" || exit 0
+          git add resume/resume_${BRANCH_NAME}.pdf
+          git commit -m "Update resume PDF for branch ${BRANCH_NAME}" || exit 0
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
